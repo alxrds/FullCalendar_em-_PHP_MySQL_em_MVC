@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/sweetalert2.min.css" rel="stylesheet">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div id="calendar"></div>
+    </div>
+
+    <div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdrop" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-info">
+            <h5 class="modal-title" id="titulo">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <form id="formulario">
+            <div class="modal-body">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="title" name="title" required>
+                <label for="">Evento</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="date" class="form-control" id="start" name="start" required>
+                <label for="fecha">Fecha</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="color" class="form-control" id="color" name="color" required>
+                <label for="color">Cor</label>
+              </div>
+            </div>          
+            <div class="modal-footer">
+              <input type="hidden" name="id" id="id">
+              <a class="btn btn-warning" data-bs-dismiss="modal" aria-label="Close"> Cancelar </a>
+              <button class="btn btn-danger" type="button" id="btnDelete"> Eliminar </button>
+              <button class="btn btn-info" id="btnAction" type="submit"> Registrar </button>
+            </div>
+          </form>
+           
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.global.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/sweetalert2.all.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
